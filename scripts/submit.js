@@ -37,7 +37,7 @@ document.getElementById("adjustCode").addEventListener("change", function(){
             document.getElementById("outAdj").innerText = "Not a code";
         } else if (codes.includes(input)){
             document.getElementById("outAdj").innerText = "Change a code's description";
-        } else if (validStart.includes(parseInt(input.charAt(0)))){
+        } else if (!validStart.includes(parseInt(input.charAt(0)))){
             document.getElementById("outAdj").innerText = "Must start with 1-5";
         } else {
             document.getElementById("outAdj").innerText = "Not an existing code yet, add it first";
