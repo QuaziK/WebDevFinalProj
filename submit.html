@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Server Codes</title>
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="icon" href="">
+</head>
+<body>
+<div class="topnav">
+    <a href="index.html">Search</a>
+    <a href="codeindex.html">Index</a>
+    <a href="about.html">About</a>
+    <a class="active" href="#">Submit</a>
+</div>
+<div class="content">
+    <h1>Add or Adjust Codes</h1>
+    <select id="change" name="change">
+        <option value="add">Add</option>
+        <option value="adjust">Adjust</option>
+    </select>
+    <form id="add">
+        <p id="outAdd">Create another code to add</p>
+        <input id="addNewCode" class="codeInput" type="text" placeholder="Code Number">
+        <textarea class="message" name="message" rows="8" cols="38" placeholder="Text of the added code goes here"></textarea>
+        <button class="submitButton" type="submit">Submit Addition</button>
+    </form>
+    <form id="adjust">
+        <p id="outAdj">Change a code's description</p>
+        <input id="adjustCode" class="codeInput" type="text" placeholder="Code Number">
+        <textarea class="message" name="message" rows="8" cols="38" placeholder="Your adjustments go here"></textarea>
+        <button class="submitButton">Submit Adjustment</button>
+    </form>
+</div>
+<script src="scripts/submit.js"></script>
+</body>
+</html>
