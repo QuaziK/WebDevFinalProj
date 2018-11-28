@@ -22,6 +22,7 @@
     <form id="add">
         <p id="outAdd">Create another code to add</p>
         <input id="addNewCode" class="codeInput" type="text" placeholder="Code Number">
+        <input id="addNewCodeName" class="codeInput" type="text" placeholder="Code Name">
         <textarea class="message" name="message" rows="8" cols="38" placeholder="Text of the added code goes here"></textarea>
         <button class="submitButton" type="submit">Submit Addition</button>
     </form>
@@ -29,6 +30,12 @@
         <p id="outAdj">Change a code's description</p>
         <input id="adjustCode" class="codeInput" type="text" placeholder="Code Number">
         <textarea class="message" name="message" rows="8" cols="38" placeholder="Your adjustments go here"></textarea>
+        <div id="radioGroup">
+            <input type="radio" name="option">Misspelling<br>
+            <input type="radio" name="option">Incorrect Information<br>
+            <input type="radio" name="option">Adding Information<br>
+            <input type="radio" name="option">Other<br>
+        </div>
         <button class="submitButton">Submit Adjustment</button>
     </form>
 </div>
