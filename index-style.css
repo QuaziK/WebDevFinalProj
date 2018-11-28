@@ -199,6 +199,7 @@ h2 {
 
 .codeInput{
     margin-top: 0;
+    margin-bottom: 5px;
     display: flex;
     justify-content: right;
     color: black;
@@ -230,7 +231,7 @@ h2 {
 }
 
 .submitButton:hover{
-    cursor: pointer;
+    cursor: default;
     background-color: #53545e;
     color: white;
 }
@@ -242,6 +243,10 @@ h2 {
 
 .message:hover{
     box-shadow: 0 0 20px #3f3f3f;
+}
+
+#radioGroup{
+    margin-bottom:10px;
 }
 
 @media screen and (min-width: 421px) and (max-width: 998px){
@@ -306,6 +311,10 @@ h2 {
     }
     .submitButton{
         background-color:grey;
+    }
+
+    #radioGroup{
+        font-size:24px;
     }
 }
 
